@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블/이미지 연습문제</title>
+    	<style>
+			table { margin:0 auto; width:700px; text-align:center;}
+			th { width:120px; }
+			tr { height:42px; }
+		</style>
+    </head>
+    <body>
+        <table border="1">
+
+        </table>
+    </body>
+</html>
+
+
+
+
+
+

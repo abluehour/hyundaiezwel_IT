@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>목록 태그 중첩 사용</title>
+</head>
+<body>
+      컴퓨터 관련 보유 기술
+
+    	프로그래밍
+
+          	웹 프로그래밍
+
+                JSP/Serverlet
+                HTML/JavaScript/jQuery
+
+            모바일 프로그래밍
+
+                Java
+                안드로이드
+
+
+      웹 및 모바일 디자인
+
+            포토샵
+            Illustrator
+            HTML5/CSS3
+
+       데이터베이스
+
+            MySql
+            MS SQL Server
+            Oracle
+
+
+</body>
+</html>
+

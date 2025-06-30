@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 태그</title>
+</head>
+<body>
+
+<table board="1">
+<thead align="center">
+	<tr><td ><img src="image/모나리자.jpg"></td><td>작품명</td><td colspan="2">모나리자</td><td></td></tr>	
+</table>
+</body>
+</html>
+
