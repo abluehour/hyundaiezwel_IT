@@ -5,7 +5,62 @@
     <title>입력 양식 태그</title>
 </head>
 <body>
- 
+   <form method = "get" action = "newMember.jsp">
+   label 태그 사용하지 않음<p>
+   성명 :<input type="text" id="name" name="name" size="10" autofocus><br>
+   <input type ="text" name="prdNo" hidden>
+   <hr>
+   label 태그 사용하지 않고 힌트 출력 <p>
+   성명 :<input type="text" id="name" name="name" size="10" placeholder="아이디"><br>
+   <hr>
+   label 태그 사용<p>
+   <label>성명 :<input type="text" id="name2" name="name" size="10" ></label><br><br>
+   <label>아이디 :<input type="text" id="name3" name="name" size="10" maxlength="8"></label><br><br>
+   <label>우편번호 :<input type="text" id="name4" name="name" size="10" value="1234" readonly></label><br><br>
+   <label>주소 :<input type="text" id="name5" name="name" size="10" required></label><br><br>
+   <hr>
+   <label>비밀번호 : <input type="password" id="password" name="password" size="10"></label><br><br>
+   <hr>
+   학년 : 
+   <label><input type="radio" name="year" value="1">1학년</label>
+   <label><input type="radio" name="year" value="2">2학년</label>
+   <label><input type="radio" name="year" value="3">3학년</label>
+   <label><input type="radio" name="year" value="4" checked>4학년</label><br><br>
+   <hr>
+   취미 : 
+   <input type="checkbox" name="game" value="게임" checked>게임
+   <label><input type="checkbox" name="movie" value="영화" >영화</label>
+   <label><input type="checkbox" name="reading" value="독서" >독서</label>
+   <label><input type="checkbox" name="sports" value="스포츠" >스포츠</label><br><br>
+   <hr>
+   여행하고 싶은 나라 : 
+   <select name="nation">
+     <option value="미국">미국</option>
+     <option value="호주"selected>호주</option>
+     <option value="일본">일본</option>
+     <option value="브라질">브라질</option>
+     <option value="기타">기타</option>
+   </select><br><br>  
+   자기소개<br>
+   <textarea rows="10" cols="50" name="content"></textarea><br><br>
+   첨부파일 선택 : <input type="file" size="30"><br><br>
+   <input type ="button" value="아이디 중복확인"><br><br>
+   <input type ="image" id="orderImg" src="image/cart.jpg"><br><br>
+   <label>이메일 : <input type="email"></label><br><br>
+   <input type="submit" value="회원가입"><input type="reset" value="취소">
+   </form>
+   <form method="get" action="newWirte.jsp">
+   <hr>
+   여행하고 싶은 나라 : 
+   <select name="nation">
+     <option value="미국">미국</option>
+     <option value="호주"selected>호주</option>
+     <option value="일본">일본</option>
+     <option value="브라질">브라질</option>
+     <option value="기타">기타</option>
+   </select><br><br>
+   <input type="submit" value="추가정보 전송">
+   </form>
 </body>
 </html>
 

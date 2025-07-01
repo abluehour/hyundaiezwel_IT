@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS:float/clear 속성</title>
+<style>
+	#menu {list-style:none;}
+	#menu li {float:left;} /* li만 float을 적용 했지만 영향이 확장 되어서 p태그 까지 영향을 미침, p태그도 li태그 옆으로 따라 올라옴 */
+	/* #menu li {float:right;} */
+	
+	#menu {clear:both;}
+	#menu {clear:right;} /*아이디 p1인 태그에 대해서는 오른쪽 flaoting을 해제할 것*/
+	#menu {clear:left;} /*아이디 p1인 태그에 대해서는 오른쪽 flaoting을 해제할 것*/
+</style>
+</head>
+<body>
+<div>
+	<ul id="menu">
+		<li>메뉴1</li>
+		<li>메뉴2</li>
+		<li>메뉴3</li>
+	</ul>
+	<p id="p1">메뉴 아래에 위치하는 내용</p>
+</div>
+</body>
+</html>
