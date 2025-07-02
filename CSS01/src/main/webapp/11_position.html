@@ -3,8 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Position 속성</title>
-    <style type="text/css"> 	
-
+    <style type="text/css"> 
+    	* {margin:0;} /* 문서 내 모든 개체의 여백을 없앰 */
+    	body{margin:0;} /*body 태그의 여백을 없앰 상위 태그기 때문에 하위 태그에서 여백 설정이 없으면 모두 영향을 받음*/
+		#parent{
+			/*position:static;*/ /* static이 기본값이고 상위 태그의 position 속성이 static이면 해당 태그가 기준이 되지 않음 */
+			/*position:relative;*/
+			position:absolute;
+			width:200px;
+			height:300px;
+			border:solid 5px #000000;
+			margin:50px 0 0 50px;
+		}
+		
+		#boxA, #boxB,#boxC{
+			width:80px;
+			height:80px;
+			text-align:center;
+		}
+		#boxA{background-color:#ff0000;}
+		#boxB{background-color:#00ff00;}
+		#boxC{background-color:#0000ff;}
+		
+		#boxB{
+			/*position:relative;*/ /* static에 해당되는 위치를 기준으로 여백 결정 */
+			position:absolute; /* 상위 태그의 position 속성값이 static인 경우 : 브라우저 화면 기준 */
+							   /* 상위 태그의 position 속성값을 relative로 위치지정 : 부모박스의 원점을 기준으로 함 */
+			top:20px;
+			left:30px;
+		}
 	</style>
 </head>
 	

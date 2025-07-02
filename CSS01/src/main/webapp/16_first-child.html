@@ -4,7 +4,21 @@
 <meta charset="UTF-8">
 <title>first-child 선택자</title>
 	<style type="text/css">
-
+		#content div { /*content의 모든 자손 div */ 
+			width:400px;
+			height:50px;
+			border:solid 1px black;
+		
+		}
+		
+		/* content 내의 첫번째 div를 선택: 첫번째 객체의 선택자 기준태그: first-child */
+		/* #content div:first-child {background:yellow;} */
+		#content div:first-child + div {background:green;}
+		/* #content div:first-child + div + div {background:red;} */ /* div를 계속 + 해서 선택할 수 있음 */
+		#content div:nth-child(3) {background:yellow;}
+		#content div:nth-child(4) {background:pink;}
+		#content div:nth-child(1) {background:pink;}
+		
 	</style>
 </head>
 <body>
