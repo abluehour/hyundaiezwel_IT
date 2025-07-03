@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	if(confirm("카드로 결제합니까?")){
+		let cardNum=prompt("카드번호를 입력하세요.", "xxxx-xxxx-xxxx-xxxx");
+		
+		if(cardNum){
+			document.write(`카드번호: ${cardNum}`);
+		} else{
+			document.write("카드번호 미입력");	
+		}
+	}else{
+		document.write("카드로 결제하지 않습니다.");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

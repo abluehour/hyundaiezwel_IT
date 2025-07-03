@@ -72,10 +72,14 @@
 	opacity: 0.7;
 }
 
-	
-	
-	
 
-
-
-
+/* css 가상클래스*/
+/* active: 마우스 클릭 
+   hover: 마우스 올렸으 때
+   link: 방문하지 않은 링크
+   visited: 방문된 링크
+   위 클래스는 적용 우선순위가 있음 -> 적용 순서를 주의 해야함
+   link -> visited -> hover -> active*/	
+   
+   
+   

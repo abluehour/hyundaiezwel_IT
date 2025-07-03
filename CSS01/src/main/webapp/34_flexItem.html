@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	.container{
+		width:500px;
+		height: 150px;
+		background: yellow;
+		display:flex;
+		}
+		
+	.item{
+		height:50px;
+		background:green;
+		border:solid 1px black;
+		}
+		
+	/*----------------------flex 관련한 추가 속성----------------------------*/
+	/* : container 영역을 벗어나는 flex item 저리방식 -> 기준 container이므로 container에 설정
+	flex-wrap:nowrap(기본값)/wrap(아래로 밀려 내려감)/wrap-reverse(위로 밀려 올라감)*/
+	.container{
+		flex-wrap:nowrap;
+		/* flex-wrap:wrap; */ /* 부모영역 벗어나서 표시*/
+		/* flex-wrap:wrap-reverse; */ 
+		}
+		
+	/* flex-basis는 flex 아이템의 기본 크기를 설정(flex item에 적용되는 속성)
+	   값으로 width, height등에 사용하는 각종 단위 사용가능
+	   속성 값으로 특정잔위 사용 수치로 표현 가능, auto사용 가능
+	   auto : 해당 item의 width 값을 사용, width값을 따로 설정하지 않으면 컨텐츠 크기(글자수 등)가 아이템의 기본 크기로 설정 */
+	   
+	.item{
+		/* flex-basis:auto; */ /* content에 설정된 width이거나 설정 없으면 content 크기 */
+		/* flex-basis:100px; */ /* 100px을 넘어가는 컨텐츠의 크기는 유지*, 100px이 안되는 컨텐츠의 크기는 100px로 고정 */ 
+		/* width:100px; */
+		/* flex-grow:1; */
+		
+		}
+	  
+	 .itme:nth-child(1){flex-grow:1;}
+	 .itme:nth-child(2){flex-grow:2;}
+	 .itme:nth-child(3){flex-grow:1;}
+	 
+	 /* flex-grow : 숫자값이 들어감 크기 상관없이 0보다 큰 값이 세팅이되면
+	 				해당 아이뎀이 유연한 flexible 변하고 원래크기 보다 커지고 부모 박스의 빈 공간을 메우게 됨*/
+	
+		
+</style>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="item">helloflexsadfsadfsaf</div>
+	<div class="item">abc</div>
+	<div class="item">helloflex</div>
+</div>
+</body>
+</html>
