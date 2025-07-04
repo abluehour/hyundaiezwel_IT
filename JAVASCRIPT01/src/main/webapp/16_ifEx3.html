@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">   
+      	let inputid = prompt("아이디 입력"); //아이디 입력 프롬프트
+      	let inputpwd = prompt("비밀번호 입력"); //비밀번호 입력 프롬프트
+      	let capital = "서울"; //도시 정답
+      	
+      	let id = "abcd"; //아이디
+      	let pwd = "1234"; //비밀번호
+			
+		if(inputid==id && inputpwd==pwd){ //아이디 비밀번호 검사
+			alert(`${id}님 반갑니다.`);
+			let inputCapital = prompt("대한민국의 수도는?"); //수도 정답 검사
+			if(inputCapital==capital){ //수도 정답
+				alert("정답입니다.");
+			}else { //수도 오답
+				alert("틀렸습니다.");
+				document.write("틀렸습니다. 대한민국의 수도는 서울입니다.");
+			}
+		}else { //로그인 실패
+			alert("아이디와 비밀번호가 일치하지 않습니다!");
+			document.write("종료합니다.");
+		}
+	
+		
+		
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

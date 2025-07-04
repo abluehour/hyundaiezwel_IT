@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>중첩 for 문</title>
+    	<script type="text/javascript">
+			for(i=1; i<=4; i++){ // 반복 기준 변수 : i
+				for(j=0; j<=6; j++){// 반복 기준 변수 : j
+					//document.write(i + j + "<br>"); //28번 수행
+					document.write("<img src=\"image/apple.png\">"); //28번 출력
+				}
+			document.write('<br>'); // 4번 수행
+			}
+			document.write('<hr>');
+			
+			
+			for(i=1; i<=4; i++){ // 반복 기준 변수 : i
+				for(j=1; j<=7; j++){ 
+    				if(j%2==1){
+    					document.write("<img src=\"image/apple.png\">");
+    				}else document.write("<img src=\"image/bomb.png\">");
+				}
+			document.write('<br>'); // 4번 수행
+			}
+			
+			
+			
+			
+       </script> 
+    </head>   
+    <body>   	  
+    </body>
+</html>

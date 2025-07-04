@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>if문 연습문제2</title>
+		<script type="text/javascript">
+			var inputid = prompt("아이디 입력");
+			var inputpwd = prompt("비밀번호 입력");
+			
+			var id = "abcd";
+			var pwd = "1234"
+				
+			if(inputid==id && inputpwd==pwd){
+				alert("로그인 성공!");
+			}else {
+				alert("아이디와 비밀번호가 일치하지 않습니다!");
+				document.write("로그인 실패");
+			}
+			
+			//아래 두 문장을 실행했을 때 출력 결과는?
+			if(true) document.write("test, if영역"); //if 조건이 true 일때만 실행
+			document.write("test"); //if 조건이 true건 false건 무조건 실행 문장
+			
+		</script>
+	</head>
+	<body>	
+		
+	</body>
+</html>
