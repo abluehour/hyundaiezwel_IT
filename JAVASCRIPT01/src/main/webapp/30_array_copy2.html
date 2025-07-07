@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">   
+      	//배열 깊은 복사
+      	//JSON객체 기능을 활용
+      	//JSON.parson() -> 구문분석
+      	//JSON.stringify() -> JSON문자열로 변환
+      	
+      	//배열 생성
+      	let arr=[1,2,3];
+        let arrCopy=JSON.parse(JSON.stringify(arr)); //논리적인 코드 구문[1,2,3] -> JSON 문자열 [1,2,3]로 변환 -> JSON 구문 분석에 의해 [1,2,3]
+        //인터프리터 해석 후 let arrCopy = [1,2,3]로 변환됨
+      	
+        console.log("원본 : ", arr);
+      	console.log("복사본 : ", arrCopy);
+      	
+      	console.log(arr==arrCopy);// 동일한 참조주소를 갖고 있는지 확인(동일한 배열인지?)
+      	
+      	console.log("변경 후");
+      	arr[0]=100;//원본을 변경하면 복사본도 변경
+      	//arrCopy[2]=300;//본사본 변결하면 원본도 동일한 data접근
+      	console.log("원본 : ", arr);
+      	console.log("복사본 : ", arrCopy)
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

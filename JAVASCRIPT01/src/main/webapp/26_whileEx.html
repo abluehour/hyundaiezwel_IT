@@ -5,8 +5,21 @@
         <title>while 문 연습문제</title>
         <script type="text/javascript">    
 		    var num= parseInt(prompt("숫자 입력")); 	
-		    
-
+		    // 압력된 수 만큼 이미지 출력 - cherry/bomb/apple
+			i=1; // 초기값
+			
+			while(i <= num){
+		    		if(i%3==1){
+		    			document.write("<img src=\"image/cherry.png\">");
+		    		}
+		    		else if(i%3==2){
+		    			document.write("<img src=\"image/bomb.png\">");
+		    		}
+		    		else if(i%3==0){
+		    			document.write("<img src=\"image/apple.png\">");
+		    		}
+		    		i++;
+		    }
 		
 			document.write("<h2>총 " + num + "개의 이미지 출력</h2>");	
 				

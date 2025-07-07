@@ -5,10 +5,32 @@
     	<title>함수의 반환 값</title>
         <script type="text/javascript">
 		    //숫자 2개를 입력 받아서 두 수의 합을 구하여 반환하는 함수
-			function input() {
-
+		    //함수에서 값의 반환 :return문을 이용해서 반환
+		    //return문을 만나면 함수는 호출한 곳으로 복귀시킴
+		    //retrun문 뒤에 값을 써주면 해당 값을 갖고 복귀함
+			const input = () => {
+				a=10; //2.함수 내 코드 실행
+				return ;//이 코드에서 호출한 곳으로 복귀 - 현재 코드에서는 16번라인
+				b=10; //위에소 복귀 했으므로 실행되지 않음 - 반드시 실행 되어야 한다면 return문 이전에 써야함
 			}
-			
+        	
+        	input(); //1. input 호출
+        	
+        	const input2= ()=>{
+        		a=10;
+        		return a;
+        	}			
+        	
+        	document.write(input2());//input2 함수가 return문이 있으므로 반환값 a변수에 저장된 값이 호출 코드 대신 들어옴
+        	
+        	const sum = () =>{
+        		let num1 = Number(prompt(`숫자 1입력 : `));
+        		let num2 = Number(prompt(`숫자 2입력 : `));
+        		
+        		return num1 + num2;
+        	}
+        	
+        	document.write(`합계 : ${sum()}`); //함수 호출한 곳을 값 반환
 			
 		</script>
     </head>

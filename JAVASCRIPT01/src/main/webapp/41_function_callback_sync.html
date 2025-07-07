@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">   
+      	//동기적 실행
+      	let callback =()=>{
+      		console.log(`콜백함수 호출됨`);
+      	}
+      	
+      	function show(cd){ //콜백함수 전달 받아서
+      		cd(); //콜백함수 호출하는 코드를 직접 작성
+      	}
+      	console.log(`콜백함수 호출 전`);
+      	show(callback); //show 함수 호출하면서 callback 익명함수 인수로 전달
+      	console.log(`콜백함수 호출 후`);
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">   
+      let color = new Array(4);
+      let answer;
+     
+      for (let i = 0; i < color.length; i++) {
+    	  answer=prompt(`${(i + 1)} 번째 색상을 입력하세요:`);
+          color[i] = answer;
+      }
+      
+      document.write(`<ol type=A>`);
+      
+      for (let i = 0; i < color.length; i++) {
+        document.write(`<li> ${color[i]} </li>`);
+      }
+      document.write("</ol>");
+      </script>
+   </head>
+   <body> 
+   </body>
+</html>

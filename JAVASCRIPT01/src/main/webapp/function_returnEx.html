@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">  
+      	let grade = new Array(3);
+      	let ave = 0;
+      	const start = () => {
+      		let answer = confirm(`성적을 입력하시겠습니까???`);
+      		if(answer){
+      			document.write(`성적 평균 : ${input()}`);
+      		}else document.write(`종료합니다.`);
+      	}
+      	
+      	const input =() =>{
+      		for (let i = 0; i < grade.length; i++) {
+          	  answer=Number(prompt(`과목 점수 입력(국어,영어,수학)`));
+          	  grade[i] = answer;
+            }
+      		ave = (grade[0]+grade[1]+grade[2])/grade.length;
+      		return ave;
+      	}
+      </script>
+      <style>
+		button{
+			width:100px;
+			height:50px; 
+			text-align:center; 
+			border-radius:50px; 
+			border: none;
+			}
+		</style>
+   </head>
+   <body>
+   	<button onClick='start()'>성적입력</button>
+   </body>
+</html>
