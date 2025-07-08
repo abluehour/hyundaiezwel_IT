@@ -4,12 +4,18 @@
 		<meta charset="UTF-8">
 		<title>Date 객체</title>
 		<script type="text/javascript">
-
-
-			var day; //  요일 저장할 변수
+			let today = new Date();
 			
-			// 요일 설정
-			switch(    ){
+			// today 활용해서 Date 객체의 기능 사용
+			
+			let year = today.getFullYear(); //년도 반환 메서드
+			let month = today.getMonth(); //월 반환 메서드(0~11까지 반환하므로 사용시 +1 해서 사용)
+			let date = today.getDate(); //일 반환 메서드
+					
+			let day; //  요일 저장할 변수
+			
+			// 요일 설정 0~6 까지 요일을 반환해주는 메서드 getDay()
+			switch(today.getDay()){
 			case 0: day= "일"; break;
 			case 1: day= "월"; break;
 			case 2: day= "화"; break;
@@ -21,6 +27,26 @@
 			
 			document.write("오늘은 " + year + "년 " + month + "월 " +
 													    date + "일 " + day + "요일입니다.");
+			let hours = today.getHours();
+			let minutes = today.getMinutes();
+			let seconds = today.getSeconds();
+			let amPm; //오전 오후를 저장 할 변수
+			
+			
+			if(hours < 12){
+				amPm = "오전";
+			}
+			else {
+				amPm = "오후";
+				if(hours > 12){
+					hours = hours-2;
+				}
+			}
+			
+			document.write(`<br>지금은 ${amPm} ${hours}시 ${minutes}분 ${seconds}초 입니다.`);
+			document.write(`<br>getTime() : ${today.getTime()}`);
+			document.write(`<br>toLocaleString() : ${today.toLocaleString()}`);
+			document.write(`<br>toGMTString() : ${today.toGMTString()}`);
 			
 
 			document.write("<br>지금은 " + hours + "시 " + minutes + "분 " +

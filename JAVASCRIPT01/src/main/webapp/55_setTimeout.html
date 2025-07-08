@@ -4,10 +4,24 @@
 		<meta charset="UTF-8">
          <title>setTimeout() 예제</title>
 		<script type="text/javascript">
-
+			function openInfo(){
+				win = window.open("msgWindow.html","setTimeout", "width=300, height=200");
+			}
+			
+			function showMsg(){
+				document.write("로드하자마자 열린 공지사항 창이 <br>3초후에 자동으로 닫혔습니다.")
+			}
+			
 		</script>
 	</head>		
-	<body >    	
+	<!-- 
+	1. 부모창 Load -> focus 없음
+	2. 자식창 Open
+	3. 자식창 focus ->부모창 focus가 없음
+	4. 자식창 close
+	5. 부모창 focus
+	 -->
+	<body onLoad="openInfo()" onFocus="showMsg()"=>  <!-- 부모창이 Load되는 시점 : onLoad, 부모창이 활성화되면 : onFocus-->  	
 		부모창입니다.    	   	
 	</body>
 </html>

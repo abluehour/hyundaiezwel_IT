@@ -4,7 +4,12 @@
 		<meta charset="UTF-8">
         <title>createElement('h3') 예제</title>
         <script type="text/javascript">
-
+			window.onlad=function(){
+				let h3_var = document.createElement('h3'); //h3태그 객체 요소가 생성되고 요소 참조값이 반환되고 h3_var 변수에 저장
+				let text_var = document.createElement("출력할 텍스트 : 홍길동, 종적 생성 문자열");//문자열 노드 생성
+				h3_var.appendShild(text_var);
+				document.body.appendChild(h3_var);
+			}
 		</script>
 	</head>
 	
