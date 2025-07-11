@@ -13,15 +13,32 @@
 				background-color:teal;
 				border-radius:20px;
 			} 
-		</style>
+		</style>  
 		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">			
 			$(document).ready(function(){
-				
-			});
+				$('#btn').hover(
+					function(){
+						// 마우스를 올렸을 때
+						$(this).css('opacity', '0.5');
+					},
+					function(){
+						// 마우스를 뗐을 때
+						$(this).css('opacity', '1');
+					});
+				});
+					
+			/*$(document).ready(function(){
+				$('#btn').on('mouseover',function(){ // 마우스를 올렸을 때
+					$(this).css('opacity', '0.5');
+				})
+				.on('mouseout',function(){ // 마우스를 뗐을 때
+					$(this).css('opacity', '1');
+				})
+			});*/
 		</script>			
 	</head>
 	<body>
-		<div>버튼</div>
+		<div id="btn">버튼</div>
 	</body>
 </html>
