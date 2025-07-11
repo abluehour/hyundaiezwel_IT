@@ -20,8 +20,22 @@
 		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {		
+				const basePeice = 4500000;
 				
-	 	    });
+				$("#basicOption, input[type='checkbox']").on("change", function(){
+					let price = basePeice;
+					price += parseInt($('#basicOption').val());
+					$("input[type='checkbox']").each(function(){
+						if($(this).is(':checked')){
+							price += parseInt($(this).val());
+						}
+						
+						
+					})//each
+					$("#amount").text(price.toLocaleString() + ' 원');
+				})//change
+			    
+	 	    });//ready
 			
 		</script> 
     </head>

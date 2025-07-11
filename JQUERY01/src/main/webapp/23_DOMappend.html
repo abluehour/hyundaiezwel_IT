@@ -11,31 +11,46 @@
 		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {		  
-			   // <img> 태그 내용을 img 변수에 저장
-
+			 // <img> 태그 내용을 img 변수에 저장
+				let img = "<img src= 'image//banana.png'>"
 			   
-			   // [prepend] 버튼 클릭했을 때
-
+			 // [prepend] 버튼 클릭했을 때
+				$('#prepend').on('click',function(){
+					$('#box').prepend(img);
+				})
+				
 			   
 			// [append] 버튼 클릭했을 때
- 
+ 				$('#append').on('click',function(){
+ 					$('#box').append(img);
+				})
 			
 			// [before] 버튼 클릭했을 때
-
+				$('#before').on('click',function(){
+ 					$('#box').before(img);
+				})
 			
 			// [after] 버튼 클릭했을 때
-
-			
+				$('#after').on('click',function(){
+ 					$('#box').after(img);
+				})
+				
 			// [empty] 버튼 클릭했을 때
-
+				$('#empty').on('click',function(){
+ 					$('#box').empty();
+				})
 			
 			// [remove] 버튼 클릭했을 때
-
+				$('#remove').on('click',function(){
+ 					$('#box').remove();
+				})
 			
 			// [초기화] 버튼 클릭했을 때
-;
+				$('#initiate').on('click', function(){
+					$('div').empty().append("div 내부 <img src='image/apple.png'>");
+				})
 			
-			
+			})
 		</script>
 	</head>
 
