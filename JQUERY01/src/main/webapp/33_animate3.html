@@ -11,12 +11,23 @@
         	}
 			#box2 { top:100px; }		
 		</style>
-		<script src="jquery-3.6.0.min.js"></script>	
+		<script src="jquery-3.7.1.min.js"></script>	
 		<script type="text/javascript">	
 			$(document).ready(function() {
-	
+				$('#box1').animate({left:'+=100'},500)
+						  .animate({width:'+=100'},1000)
+						  .animate({height:'+=100'},1000)
+			
+			setTimeout(function(){
+				$('div').clearQueue();
+				$('div').hide();
+				
+			},3000);
+			
+				$('#box2').animate({left:'+=100'},500)
+			  			  .animate({width:'+=100'},1000)
+			  			  .animate({height:'+=100'},1000)
 			});
-		
 		
 		</script>       
     </head>       

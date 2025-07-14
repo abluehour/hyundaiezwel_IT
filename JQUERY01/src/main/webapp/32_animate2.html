@@ -13,10 +13,21 @@
 				position: relative;
         	   }		
 		</style>
-		<script src="jquery-3.6.0.min.js"></script>
+		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-
+				$('#startBtn').on('click', function(){
+					//div의 인덱스 만큼 지연 후 animate() 실행
+					$('div').each(function(index){
+						$(this).delay(index*500).animate({left:500},'slow');
+					})
+				})
+				$('#backBtn').on('click', function(){
+					//div의 인덱스 만큼 지연 후 animate() 실행
+					$('div').each(function(index){
+						$(this).delay(index*500).animate({left:0},'slow');
+					})
+				})
 				
      		});
 		</script>

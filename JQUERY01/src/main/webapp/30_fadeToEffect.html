@@ -7,10 +7,18 @@
 			ul { list-style:none; }	
 			li { display:inline-block; margin-right:30px; }				
 		</style>   
-		<script src="jquery-3.6.0.min.js"></script>
+		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-
+				$('#off').on('mouseover',function(){
+					$('img').fadeTo(1000,0);
+				})
+				$('#on').on('mouseover',function(){
+					$('img').fadeTo(1000,1);
+				})
+				$('#50').on('mouseover',function(){
+					$('img').fadeTo(1000,0.5);
+				})
 			});
 		</script>     
 	</head>    

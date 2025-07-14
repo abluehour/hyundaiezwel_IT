@@ -10,14 +10,27 @@
 				line-height:50px;
 				text-align:center;
 				background-color: rgb(0, 176, 240);
-				position: relative;
+				position: absolute;
+				/*position: relative;*/
         	   }		
 		</style>
-		<script src="jquery-3.6.0.min.js"></script>
+		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
+			//animate()형식
+			//객체.animate({css속성}, duration, easing, callback); => 콜백람수 화살표 함수 안됨
+			//애니메이터 대상객체.stop(true); => ckearQueue -> 예약된 애니메이션(대기열에 저장된)을 삭제(조기화)
+			//애니메이터 대상객체.stop(true, true); => ckearQueue , goToEnd
+			//대기열운영 -> 예약된 애니메이션 저장 공간
 			$(document).ready(function() {
-
-	     	});
+				$('div').hover(
+				function(){
+					$(this).animate({left:500},1000);
+				},
+				function(){
+					$(this).animate({left:0},4000);
+				}
+				)//hover
+	     	});//ready
 		</script>
     </head>        
      <body>    

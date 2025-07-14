@@ -15,9 +15,18 @@
 			ul { list-style:none; }	  /* type 없음 */	
 			li { display:inline-block; margin-right:30px; }				
 		</style>	
-		<script src="jquery-3.6.0.min.js"></script>
+		<script src="jquery-3.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$('#fadeIn').on('clik', function(){
+					$('h2').fadeIn('slow');
+				})
+				$('#fadeOut').on('clik', function(){
+					$('h2').fadeOut('slow');
+				})
+				$('#fadeToggle').on('clik', function(){
+					$('h2').fadeToggle('slow');
+				})
 
 	        });
 		</script>
