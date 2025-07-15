@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*index.css*/
+
+/****************header*****************/
+
+#headerBox {
+  height: 60px;
+  line-height: 60px; /*줄간격 - 수직으로 가운데 정렬 효과*/
+  padding: 0;
+}
+
+#logoBox {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+
+/*********** top menu *******************/
+#topMenuBox {
+  float: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
