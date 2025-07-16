@@ -1,23 +1,25 @@
 @charset "UTF-8";
-/*index.css*/
+/*indexcss*/
 
-/****************header*****************/
-
+/**********header**********/
 #headerBox {
-  height: 60px;
-  line-height: 60px; /*줄간격 - 수직으로 가운데 정렬 효과*/
+  height: 60%;
+  line-height: 60px;
   padding: 0;
 }
 
-#logoBox {
-  float: left;
-  height: 60px;
-  line-height: 60px;
+/************ 메인 메뉴 고정 ****************/
+/* 윈도우 스크롤 시 메인 메뉴 고정 */
+/* 클래스 css 구성해 놓고 js addClass()로 사용 */
+.mainMenuFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 다른 요소들 위에 표시 */
 }
 
-/*********** top menu *******************/
-#topMenuBox {
-  float: right;
-  font-weight: bold;
-  padding-right: 10px;
+/* 메인 메뉴 아래 그림자 표시 */
+.mainMenuShadow {
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3);
 }

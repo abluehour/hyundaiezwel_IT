@@ -119,3 +119,21 @@ ul {
   text-decoration: underline;
   color: black;
 }
+
+/*********** Bottom Menu ***************/
+#bottomMenuBox {
+  height: 30px;
+  line-height: 30px;
+}
+
+#bottomMenuBox li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+#bottomMenuBox a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
