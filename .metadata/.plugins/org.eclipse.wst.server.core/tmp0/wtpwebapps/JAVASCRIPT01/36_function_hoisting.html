@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>함수 호이스팅</title>
+      <script type="text/javascript">
+      	show(); //함수가 선언 되기 전에 먼저 호출 : 일반 함수는 호이스팅이 가능
+      
+      	function show (){
+      		alert(`show 함수 호출`);
+      	}
+      	show(); //함수 선언 후 호출
+      	
+      	//익명 함수인 경우 호이스팅이 안됨 - 익명함수 (함수 이름 없이 변수에 함수 코드를 저장해 구현하는 방식)
+      	
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

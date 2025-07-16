@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script type="text/javascript">   
+      	//숫자 10개를 입력 받아서 양수와 음수와 0의 개수를 출력하는 프로그램 만들기
+      	let positi = 0;
+      	let negati = 0;
+      	let zero = 0;
+      	for(let i = 1; i <= 10; i++){ 
+      	    // prompt로 받은 문자열을 Number()로 감싸서 숫자로 변환
+      	    const inputNum = Number(prompt(`숫자${i} 입력: `));
+ 
+      	    if(inputNum > 0) positi++;
+      	    else if(inputNum < 0) negati++;
+      	    else zero++;
+      	}
+      	document.write(`양수의 개수 : ${positi}<br>음수의 개수 : ${negati}<br>0의 개수 : ${zero}`)
+      	
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

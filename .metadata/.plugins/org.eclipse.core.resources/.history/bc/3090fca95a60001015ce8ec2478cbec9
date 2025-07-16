@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script type="text/javascript">   
+      	
+      </script>
+   </head>
+   <body>
+   	<div style="background-color: lightgray; padding: 5px;">
+   		<p>Section 1</p><br>
+   		<p>Section 2</p><br>
+   		<p>Section 3</p>
+   	</div>
+   		
+   </body>
+</html>

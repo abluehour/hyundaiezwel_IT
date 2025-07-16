@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>querySelector()</title>
+		<script type="text/javascript">
+			window.onload =()=>{
+				let header = document.querySelector('h1'); //h1 태그의 참조 값 반환
+				
+				//문서 객체 속성 변경
+				header.style.color = 'orange';
+				header.style.backgorund = 'red';
+				header.innerHTML = "from JavaScript";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Header</h1>
+		<h1>Header</h1>
+		<h1>Header</h1>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script type="text/javascript">   
+      	//querySelectorAll() - 배열과 비슷한 형태로 반환 = 브라우저 자체 객체인 NodeList(정적개체)로 처리함
+      	//for, forEach 사용 가능
+      	window.onload = () =>{
+      	let header = document.querySelectorAll('h1');
+      	
+      	console.log(Object.prototype.toString.call(header));
+      	
+      	/* for(let i=0; i<header.length; i++){
+      		header[i].style.color="red"
+      	}*/ 
+      	
+      	header.forEach((item) => {
+      		item.style.color="red";
+      	})
+      	
+      	
+      	
+      	let header_h2 = document.querySelectorAll('h2');
+      	
+      	console.log(Object.prototype.toString.call(_h2));
+      	
+      	/* for(let i=0; i<header.length; i++){
+      		header[i].style.color="red"
+      	}*/ 
+      	
+      	header.forEach((item) => {
+      		item.style.color="blue";
+      	})
+      	
+      	
+      	
+      	
+      	
+      	
+      	}
+      </script>
+   </head>
+   <body>
+   		<h1>header</h1>
+   		<h1>header</h1>
+   		<h1>header</h1>
+   		<h2>header</h2>
+   		<h2>header</h2>
+   		<h2>header</h2>
+   </body>
+</html>

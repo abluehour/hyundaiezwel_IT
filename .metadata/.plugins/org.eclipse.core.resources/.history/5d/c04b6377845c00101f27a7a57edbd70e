@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>마우스 이벤트</title>
+		<script type="text/javascript">
+			window.onload = function(){
+			
+			};
+			
+			// 문서 상에서 오른쪽 마우스 클릭했을 때 이벤트 처리 : contextmenu
+
+		</script>
+	</head>
+	<body>
+		<img id="birdImg" src="image/bird.jpg">
+	</body>
+</html>
+
+
+
+
+

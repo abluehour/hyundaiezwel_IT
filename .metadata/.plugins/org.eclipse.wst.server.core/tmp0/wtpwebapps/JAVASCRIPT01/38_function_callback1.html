@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>콜백함수</title>
+      <script type="text/javascript">   
+      	//익명함수
+      	let callback = () =>{
+      		alert(`익명함수 입니다.`);
+      	};
+      	
+      	//매개변수를 함수로 받는 함수 - 매개 변수는 함수 여야 한다 명시할 수는 없음.
+		function show(callback){ //callback 변수는 show함수의 매개변수 - 지역변수
+      		callback(); //이때 사용되는 함수는 
+      	}      	
+      	
+      	function show2(cb){
+      		cb();
+      	}
+      	
+      	//show 함수 호출 할 때 함수내부에서 전달 받은 매개변수를 함수로 사용하고 있으므로 인수로 함수코드를 전달해야 함
+      	show(callback); //callback 익명함수의 코드를 콜백함수로 부른다
+      	
+      	show2(callback) //이때 전달되는 callback 익명함수를 콜백함수로 부름
+      	callback(); //익명함수 호출
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

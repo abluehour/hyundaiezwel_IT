@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div {
+				width:100px;
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				color:white;
+				background-color:teal;
+				border-radius:20px;
+			} 
+		</style>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">			
+			$(document).ready(function(){
+				$('#createBtn').on('click',function(){
+					//새 버튼 2개 생성
+					$(this).after("<p><input type='button' id='newBtn1' value='새버튼1'>" +
+							   	  "<p><input type='button' id='newBtn2' value='새버튼2'>");
+				});
+				//버튼 위로 커서가 올라가면 초록색으로
+				$(document).on('mouseenter','#newBtn1,#newBtn2',function(){
+					$(this).css('background','green');
+				});
+				//버튼 위에서 커서가 떠나면 노란색으로
+				$(document).on('mouseleave','#newBtn1,#newBtn2',function(){
+					$(this).css('background','yellow');
+				})
+				//버튼 클릭 시 구글로 연결
+				$(document).on('click','#newBtn1,#newBtn2',function(){
+					window.open('https://www.google.com');
+				});
+			});
+		</script>			
+	</head>
+	<body>
+		<div id='createBtn'>버튼</div>
+	</body>
+</html>

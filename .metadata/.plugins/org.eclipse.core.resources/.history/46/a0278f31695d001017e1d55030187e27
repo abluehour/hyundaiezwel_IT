@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div {
+				width:100px;
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				color:white;
+				background-color:yellow;
+				border-radius:20px; 
+			} 
+		</style>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">			
+			$(document).ready(function(){
+				const colors = ['red', 'green', 'blue'];
+				const btn = $('#btn');
+				let cnt = 0;
+				
+				btn.on('click',function(){
+					$(this).css('backgroundColor',colors[cnt]);
+					if(cnt>3){
+						cnt=0;
+					}else cnt++;
+					
+				})
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				/*btn.on('click',function(){
+					if(cnt%3==0){
+						$(this).css('backgroundColor','red');
+						cnt++;
+					}
+					else if(cnt%3==1){
+						$(this).css('backgroundColor','green');
+						cnt++;
+					}
+					else{
+						$(this).css('backgroundColor','blue');
+						cnt++;
+					}
+				})*/
+				
+			});
+		</script>			
+	</head>
+	<body>
+		<div id='btn'>클릭</div>
+	</body>
+</html>

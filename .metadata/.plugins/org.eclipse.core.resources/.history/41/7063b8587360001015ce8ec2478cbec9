@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+window.onload = function(){
+	let recorBtn = document.getElementById('recordBtn');
+	let stopBtn = document.getElementById('stopBtn');
+	let soundClips = document.getElementById('soundClips');
+}

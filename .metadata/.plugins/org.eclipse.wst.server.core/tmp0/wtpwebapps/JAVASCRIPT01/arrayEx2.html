@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <style>
+      	td{width:50px; text-align:center;}
+      </style>
+      <script type="text/javascript">   
+      let name = new Array(4);
+      let answer;
+     
+      for (let i = 0; i < name.length; i++) {
+    	  answer=prompt(`학생 ${i+1} 입력`);
+          name[i] = answer;
+      }
+      
+      document.write(`<table border=1>`);
+      
+      for (let i = 0; i < name.length; i++) {
+        document.write(`<tr><td> ${(i+1)} </td><td> ${name[i]} </td></tr>`);
+      }
+      document.write("</table>");
+      </script>
+      
+   </head>
+   <body>
+   
+   </body>
+</html>

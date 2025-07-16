@@ -1,0 +1,29 @@
+_<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>confirm 함수 이용한 데이터 입력</title>
+
+<script>
+	let isStudent; //confirm 창에 의해 전달된 값을 저장하기 위해 생성한 변수 준비
+	isStudent = confirm("당신은 학생입니까?"); //브라우저에 의해 사용자가 선택한 버튼에 따라 true/false 값이 전달->저장(변수에 저장)
+	console.log(isStudent);
+	
+	if(isStudent==true){
+		result="学生です";
+		discount="50%";
+	}
+	else{
+		result="学生ではありません"
+		discount="無";
+	}
+	
+	document.write("結果: " + result + "<br>"); //write(문자열) -> 규칙
+	document.write("할인율: " + discount);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

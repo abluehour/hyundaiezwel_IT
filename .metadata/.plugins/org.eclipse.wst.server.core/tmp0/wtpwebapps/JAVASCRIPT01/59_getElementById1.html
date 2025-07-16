@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>getElementById() 예제</title>
+        <script type="text/javascript">			
+			function change(){               
+				//태그의 id 속성이 'header'인 문서 객체 반환
+				let headers = document.getElementById('header'); //"이 문서(document)에서 아이디가 'header'인 요소를 찾아줘." 라는 명백한 명령
+				//요소의 글자 내용 변경
+				headers.innerHTML="변경된 제목";
+				
+            }     			
+		</script>
+	</head>
+	
+	<body>
+    	<h1 id="header">제목</h1>
+        <button id="btn" onClick='change()' >제목 변경</button>
+	</body>
+</html>
+
+

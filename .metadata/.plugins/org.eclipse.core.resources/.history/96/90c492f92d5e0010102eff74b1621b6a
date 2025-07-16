@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM : attr() : 속성 변경</title>
+		<style type="text/css">
+			div {margin:0 auto; width:900px;}
+			img {width:200px; height:100px;}			
+		</style>
+		
+		<script src="jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.hover-effect').on('mouseover', function(){
+		        const newSrc = $(this).attr('src').replace('img1', 'img2');
+		        $(this).attr('src', newSrc);
+		    })
+		    .on('mouseout', function(){
+		        const originalSrc = $(this).attr('src').replace('img2', 'img1');
+		        $(this).attr('src', originalSrc);
+		    });
+		});
+		</script>
+	</head>
+	<body>
+		<div><img class="hover-effect" src = "image/img1-1.jpg">
+			 <img class="hover-effect" src = "image/img1-2.jpg">
+			 <img class="hover-effect" src = "image/img1-3.jpg">
+			 <img class="hover-effect" src = "image/img1-4.jpg">
+		</div>		
+	</body>
+
+</html>

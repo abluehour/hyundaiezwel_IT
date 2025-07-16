@@ -1,0 +1,27 @@
+/**
+ *  join.html 파일의 입력 유효성 검사를 진행하는 자바스크립트 코드
+ * <input>입력란에 데이터를 입력했는지의 여부
+ * 입력된 테이터의 길이 체크
+ * 비밀번호와 비빌번호 확인 일치 여부
+ * 라디오버튼 체크 여부
+ * 체크박스 체크 여부
+ */
+
+//태그가 모두 준비되고 나서 유효성 검사
+window.onload = () =>{
+	//submit 버튼 클릭시 from 유효성 검사 진행
+	//document.getElementById('joinFrom').onsubmit=()=>{} 얘도 가능
+	let form_var = document.getElementById('joinFrom');
+	form_var.onsubmit=()=>{
+		//1. 성명을 입력하지 않은 경우 경고창 출력 -> 성명 입력칸에 포커스 -> submit 실행 대기
+		let name = document.getElementById('name');
+		
+		if(name.value==""){//성명을 입력하지 않으면
+			alert("성명을 입력하세요");
+			name.focus();//성명 입력란에 포커스
+			return false;//submit 방지
+		}
+		
+	}//form_var end
+	
+}//window.onoad end

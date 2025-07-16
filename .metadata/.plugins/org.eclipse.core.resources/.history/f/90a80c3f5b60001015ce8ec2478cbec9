@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script type="text/javascript">   
+      	
+      </script>
+   </head>
+   <body>
+   	<div style="background-color: lightgray; margin: 10px auto;  padding: 10px;">
+   		<div>Section 1</div>
+   		<p>첫 번째 숨겨진 섹션의 내용입니다.</p><br>
+   		<div>Section 1</div>
+   		<p>두 번째 숨겨진 섹션의 내용입니다.</p><br>
+   		<div>Section 1</div>
+   		<p>세 번째 숨겨진 섹션의 내용입니다.</p>
+   	</div>
+   		
+   </body>
+</html>

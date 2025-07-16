@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM : 속성 추가</title>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//alert('속성명', 값)/alert('속성명', callback)/alert({속성명: 속성값, ..})
+				//removerAttr('속성명') - 속성제거
+				$('img').on('mouseover', function(){
+					$(this).attr('scr','image/apple/png');
+					
+				})
+				.on('mouseout', function(){
+					$(this).attr('scr','image/apple/png');
+					
+				})
+				
+				
+			});
+		</script>
+	</head>
+	<body>
+		<img src="image/heart.png" id="img">
+	</body>
+</html>

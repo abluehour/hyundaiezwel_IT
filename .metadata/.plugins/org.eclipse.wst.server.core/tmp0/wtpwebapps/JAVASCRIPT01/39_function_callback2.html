@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>일반함수를 콜백함수로 전달</title>
+      <script type="text/javascript">   
+      	//일반 함수 생성
+      	endFunction();
+      	function endFunction(){
+      		console.log("종료");
+      	}
+      	
+      	//일반함수 정의 (매개변수 2개)
+      	function showName(name, func){
+      		console.log(`nama : ${name}`);
+      		func();//함수 호출 형식 코드이므로 func 매개변수는 콜백함수가 전달되어야 함
+      	}
+      	
+      	showName('정웅교', endFunction); //일반 함수를 활용해서 콜백함수로 전달 -> 함수명만 전달 -> 콜백함수로 함수 코드가 전달
+      	showName('정웅교', endFunction()); //endFunction() 호출 후에 showName을 호출 그러면 showName 매개변수에는 name만 들어가고 func에는 잘못된 값이 들어가 오류가 남
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

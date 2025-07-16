@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+window.onload = function(){
+	let recorBtn = document.getElementById('recordBtn');
+	let stopBtn = document.getElementById('stopBtn');
+	let soundClips = document.getElementById('soundClips');
+	
+	if(navigator.mediaDevices){
+		let constraints = {
+			audio:truelse
+		}
+		let chunks = [];//녹음데이터 저장하기 위한 변수
+		//mediaDevices 카메라 마이크 공유화면 등 현재 연결 된 미디어 입력장치로의 접근 방법 제공하는 인터페이스
+		navigator.mediaDevices.getUserMedia(constraints)
+		.then(()=>{
+			//녹음을 위한 객체 생성 MediaRecorder 클래스 사용해서 녹음객체 생성  stream 객체 생성자에 전달해야 함
+			const mediaRecorder = MediaRecorder()
+			
+		})
+	}
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	* {margin:0; padding:0;}
+	
+	.container {
+		width:500px;
+		height:300px;
+		border:solid 1px black;
+		margin:5px;
+		}
+	
+	.container div {
+		width:20%; /* 넒이만 지정 배치방향 왼쪽-오른쪽일때 필수*/
+		height:10% /* 높이만 지정 배치방향 수직일 때 필수 */
+		
+		}
+		
+	.container div:nth-child(1){
+		background-color:red;
+		}
+		
+	.container div:nth-child(2){
+		background-color:blue;
+		}
+		
+	.container div:nth-child(3){
+		background-color:yellow;
+		}
+		
+	/*------------------flex 속성 관련 설정---------------------*/
+	/* 플렉서블 박스의 item 배치에 대한 기본 설정 : 배치방향(flex-direction) (row : 왼->오)
+										 정렬방식(justify-content) (flex-start: 시작점으 기준으로 배치) */
+	.container {
+		/*display:flex;*/ /* 부모 박스들 끼리의 배치형태 */
+		display:inline-flex; /* 부모 박스들 끼리의 배치형태 - line-block과 동일 flaoting 된것처럼 오른쪽 공간 부족 아래로 배치 */	
+		flex-direction:row; /* flex item들의 배치 방향을 결정하는 속성 */ 
+		/*flex-direction:colum-reverse;*/ /* 아래->위 */
+		
+		/* 정렬방식: 주축에서의 정렬방식 -> 위 flex:direction에서 주축을 row(수평방향)로 설정 즉 수평방향의 정렬방식이 설정됨 */
+		/* justify-content:flex-start; */ /* 기본값: 시작점에서 배치 */
+		/* justify-content:flex-end; */ /* 끝점에 배치 */
+		/* justify-content:flex-center; */  /* 디렉션 방향으로 중앙에 배치 */
+		/* justify-content:space-between; */ /* 여백이 있을 경우 item사이로 간겨을 배치(item 사이 간격동일하게) 시작점에서 배치 시작 끝점에서 배치 끝냄 */
+		/* justify-content:space-around; */ /* item 사이로 간격을 배치 시작점과 끝점에도 동일 간격을 배치 */
+		   justify-content:space-evenly; /* item 배치 후 생성되는 간격이 모두 동일 */	
+		  
+		/* 정렬방식 : 교차축에서의 정렬방식 : 한 예제는 수평방향이 주축이므로 교차축을 수직방향 
+		   속성: align-items 기본 속성값 : flex-start 
+		   교차춛에서의 정렬은 아이템의 놈피가 설정되어 교차축으로 여백이 있을 경우 활용 */
+		   /* align-items: flex-start; */ /* 교차축의 시작점에 배치 */
+		   /* align-items: flex-end; */  /* 교차축의 끝에 배치 */
+		   /* align-items: center; */  /* 교차축의 중간에 배치 */		
+		}
+		
+		
+</style>
+
+</head>
+<body>
+	
+	
+	<div class="container">
+		<div></div><div></div><div></div>
+	</div>
+	
+	<div class="container">
+		<div></div><div></div><div></div>
+	</div>
+	
+	
+</body>
+</html>
+	

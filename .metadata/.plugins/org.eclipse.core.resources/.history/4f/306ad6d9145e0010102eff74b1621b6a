@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div {
+				width:100px;
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				color:white;
+				background-color:teal;
+				border-radius:20px;
+			} 
+		</style>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">			
+			$(document).ready(function(){
+				$('#Btn').on('click',function(){
+					//새 버튼 2개 생성
+					$(this).after(`<p><input type='button' id='newBtn1' value='새버튼1'> +
+							   	   <p><input type='button' id='newBtn2' value='새버튼2'>`);
+				});
+				
+				$(document).on('mouseenter','#newBtn1,#newBtn2',function(){
+					$(this).css('background','green');
+				});
+				
+				$(document).on('mouseleave','#newBtn1,#newBtn2',function(){
+					$(this).css('background','yellow');
+				})
+				
+				$(document).on('click','#newBtn1,#newBtn2',function(){
+					window.open('https://www.naver.com');
+				});
+			});
+		</script>			
+	</head>
+	<body>
+		<div id='Btn'>버튼</div>
+	</body>
+</html>

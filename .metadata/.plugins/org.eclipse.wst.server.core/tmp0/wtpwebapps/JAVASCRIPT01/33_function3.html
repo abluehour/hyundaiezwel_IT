@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수 예제3</title>
+		<script type="text/javascript">
+			// 버튼 클릭할 때 함수 호출
+			// 색상 입력 받아서 문서 배경색을 변경하는 함수
+			const input = () => { //색상을 입력 받아 배경색을 변경하는 함수
+				let color = prompt("색상 입력 : red/blue/green");
+				document.bgColor = color;
+			}
+			
+			
+		</script>
+		<style>
+		button{
+			width:100px;
+			height:50px; 
+			text-align:center; 
+			border-radius:50px; 
+			border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!--  버튼을 클릭하면(onClick) input() 함수 호출 태그에서 script 적용하는 방식 -->
+		<!--  onClick은 태그 객체에서 클릭 이벤트가 발생하면 어떻게 처리할 것인지에 대한 값을 전달받아 실행하는 이벤트 핸들러-->
+		<button onClick='input()'>색상입력</button>
+	</body>
+</html>

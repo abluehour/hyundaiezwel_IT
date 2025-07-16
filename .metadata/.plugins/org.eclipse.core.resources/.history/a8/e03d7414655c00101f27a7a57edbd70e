@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>createElement('h3') 예제</title>
+        <script type="text/javascript">
+			window.onload = function(){ // 오타 수정: onlad -> onload
+				// 동적으로 태그 객체를 생성해서 동적으로 문서에 삽입
+				// h3 태그를 동적 생성하고 표현할 문자열(textNode)도 동적 생성해서 h3 태그를 document에 포함시킴
+				let h3_var = document.createElement('h3'); // <h3></h3> 태그 객체 요소 생성
+				
+                // 텍스트 노드 생성. createElement는 태그를 만드는 함수입니다.
+				let text_var = document.createTextNode("출력할 텍스트 : 홍길동, 동적 생성 문자열"); 
+				
+                // h3 태그의 자식으로 텍스트 노드를 추가합니다.
+				h3_var.appendChild(text_var); // 오타 수정: appendShild -> appendChild
+				
+                // body 태그의 자식으로 h3 요소를 추가합니다.
+				document.body.appendChild(h3_var);
+			}
+		</script>
+	</head>
+	
+	<body>
+	</body>
+</html>

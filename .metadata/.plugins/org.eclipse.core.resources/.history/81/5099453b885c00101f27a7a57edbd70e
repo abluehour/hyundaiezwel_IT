@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>addEventListener()</title>
+		<script type="text/javascript">
+    		window.onload = function() {
+        		let box = document.getElementById("box");
+
+        		// 마우스 버튼을 누르고 있을 때 발생하는 이벤트
+       			 box.addEventListener("mousedown", () => {
+           			box.style.background = "green";
+        			});
+
+       			// 눌렀던 마우스 버튼을 뗄 때 발생하는 이벤트
+        		box.addEventListener("mouseup", () => {
+           			 box.style.background = "";
+        			});
+    		};
+</script>
+	</head>
+	<body>
+		<div id="box">클릭</div>
+	</body>
+</html>

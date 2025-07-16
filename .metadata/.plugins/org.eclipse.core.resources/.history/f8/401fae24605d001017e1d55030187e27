@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>윈도우 이벤트 - 윈도우 크기 변경</title>
+		<script src="jquery-3.6.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//윈도우 크기 변경시 발생 이벤트 : resize
+				//resize() 사용
+				$(window).resize(()=>{
+					let winwidth= $(window).width();
+					let winheight= $(window).height();
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<h3> 윈도우 크기 : 윈도우 크기를 변경해보세요.</h3>
+	</body>
+</html>

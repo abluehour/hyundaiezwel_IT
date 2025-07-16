@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>함수 예제</title>
+        <script type="text/javascript">		
+			//함수 선언 형식
+			/*일반적인 형식 : function 예약어를 통해 선언 -> function 함수면 ([매개변수1, 매개변수2, ... ,매개변수n]){함수 호출시 실행할 코드 집합} 
+			  함수는 호출 해야 실행*/
+			
+			//호출되는 XXX함수 입니다 라는 메세지 창을 출력하는 함수
+			const show = function(){
+				  alert("show함수가 실행되었습니다.");
+			  } 
+			//일반적인 함수 호출 : 함수명([인수1, 인수2, ... ,인수n]) : 인수는 실제 값
+			show();
+			 
+			//호출없이 실행되는 함수 - 전당해야 하는 데이터의 형식이 반드시 함수여야 하는 경우(한번쓰고 마는 경우)
+			(function(){
+				alert("호출없이 자동 실행되는함수가 실행되었습니다!");
+			})();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <style>
+      	div {margin :0 atuo; width:100px; text-align:center;}
+      </style>
+      <script type="text/javascript">   
+      	//카운트 다운 버튼을 클릭하면 0.5 초 간격으로 이미지 변경
+      	
+      	
+      	
+      </script>
+   </head>
+   <body>
+   <div>
+   		<h1 id="count">10</h1>
+   		<img id="bomImg" src="image/bomb1.jpg"><br><br>
+   		<button>카운트다운 시작</button>
+   	</div>
+   </body>
+</html>

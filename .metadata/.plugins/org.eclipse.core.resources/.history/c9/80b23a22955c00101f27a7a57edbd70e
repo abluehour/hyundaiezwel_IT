@@ -1,0 +1,64 @@
+/**
+ *  join.html 파일의 입력 유효성 검사를 진행하는 자바스크립트 코드
+ * <input>입력란에 데이터를 입력했는지의 여부
+ * 입력된 테이터의 길이 체크
+ * 비밀번호와 비빌번호 확인 일치 여부
+ * 라디오버튼 체크 여부
+ * 체크박스 체크 여부
+ */
+
+//태그가 모두 준비되고 나서 유효성 검사
+window.onload = () =>{
+	//submit 버튼 클릭시 from 유효성 검사 진행
+	//document.getElementById('joinFrom').onsubmit=()=>{} 얘도 가능
+	let form_var = document.getElementById('joinForm');
+	form_var.onsubmit=()=>{
+		//1. 성명을 입력하지 않은 경우 경고창 출력 -> 성명 입력칸에 포커스 -> submit 실행 대기
+		let name = document.getElementById('name');
+		
+		if(name.value==""){//성명을 입력하지 않으면
+			alert("성명을 입력하세요");
+			name.focus();//성명 입력란에 포커스
+			return false;//submit 방지
+		}
+		
+		//2. id에 대한 입력 여부, 길이 제한에 대한 유효성 검사
+		let id = document.getElementById('id');
+	
+		if(id.value==""){//id를 입력하지 않으면
+			alert("ID를 입력하세요");
+			id.focus();
+			return false;//submit 방지
+		}
+		
+		//입력돤 id 글자 수 확인
+		if(id.value.length < 6 || id.value.length > 10){
+			alert("아이디는 6~10자로 입력하세요");
+			id.value="";//입력 값 지우기
+			id.focus();
+			return false;//submit 방지
+		}
+		
+		//비밀번호와 확인 일치 여부 체크
+		let password = document.getElementById('password');
+		let passwordCheck = document.getElementById('passwordCheck');
+		
+		if(password.value!=passwordCheck){
+			alert("비밀번호 확인이 일치하지 않습니다");
+			passwordCheck.value="";
+			passwordCheck.focus();
+			return false;
+		}else return true;
+	
+		
+	}//form_var end <submit 버튼을 눌렀을 때>
+	
+}//window.onoad end
+
+
+
+
+
+
+
+

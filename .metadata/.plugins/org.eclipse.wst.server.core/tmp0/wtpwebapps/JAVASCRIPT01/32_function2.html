@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+        <title>함수 예제2</title>  
+        <script type="text/javascript">			
+			//함수 블럭에서 함수를 호출 - 함수호출은 함수 생성 후 어디서든 사용 가능
+			//일반 함수 1 : 호출되면 배경색을 묻고 해당 배경색으로 변경해주는 역할을 진행
+			const changeColor = () => {
+				let color = prompt(`색상입력 : red/green/blue`,`red/green/blue`);
+				document.write(`${color} 로 배경색을 바꿉니다.`);
+				
+				//document는 body태그를 나타내는 객체 =dgColor 속성(body 태그의 배경색 속성을 설정하고나 현재 설정된 값을 갖고 올 때 사용)''
+			document.bgColor= color;
+				
+			}
+			//일반 함수 2 : 배경색을 변결 할 건지 여부를 묻고 확인 버튼을 클릭하면(ture) 배경색 변경 담당 함수를 호출
+			//함수 호출시 전달되는 값(인수)이 없고 함수 종료시 반환되는 값이 없는 함수
+			const start = () =>{
+				let answer = confirm(`배경색을 변경 하시겠습니까?`);
+				
+				if(answer){
+					changeColor();//함수내에서 함수 호출
+				}
+				else alert(`취소하였습니다.`)
+			}
+			
+			//호출코드
+			start();
+        </script> 
+    </head>
+
+    <body> 
+   
+    </body>
+</html>
+
+

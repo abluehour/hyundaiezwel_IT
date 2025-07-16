@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <style>
+      th {background-color:#ff0;}
+      td {
+      	  width:100px;
+      	  text-align:center;
+      	}
+      </style>
+      <script type="text/javascript">  
+      		//1부터 10까지 홀수를 표현하고 홀수에 대한 누적 sum을 출력함
+      	 	let sum = 0;
+      	 	
+      	 	document.write("<table border =\"1\">");
+      	 	document.write("<tr><th>i</th><th>sum</th></tr>");
+      	 	for(let i=0; i<10; i++){
+      	 		sum+=++i; //++연산자가 변수 앞에 있느냐 뒤에 있느냐에 따라 의미가 달라짐, 앞에 있으면 먼저 증가, 뒤에 있으면 나중에 증가함
+      	 		//sum+=i++; //위 수식과는 다른 결과가 나옴
+      	 		document.write("<tr><td>" + i + "</td><td>" + sum + "</td><tr>")
+      	 	}
+      	 	document.write("</table>")
+      		
+      	 	//1~10까지
+      	 	let sum2 = 0;
+      	 	
+      	 	document.write("<table border =\"1\">");
+      	 	document.write("<tr><th>i</th><th>sum</th></tr>");
+      	 	for(let i=0; i<10;){
+      	 		sum2+=++i; //++연산자가 변수 앞에 있느냐 뒤에 있느냐에 따라 의미가 달라짐, 앞에 있으면 먼저 증가, 뒤에 있으면 나중에 증가함
+      	 		//sum2+=i++; //위 수식과는 다른 결과가 나옴
+      	 		document.write("<tr><td>" + i + "</td><td>" + sum2 + "</td><tr>")
+      	 	}
+      	 	document.write("</table>")
+      		
+      </script>
+   </head>
+   <body>
+   
+   </body>
+</html>

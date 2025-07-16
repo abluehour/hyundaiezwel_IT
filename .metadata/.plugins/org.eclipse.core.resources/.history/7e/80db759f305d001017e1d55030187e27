@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script type="text/javascript">   
+        $(document).ready(()=>{
+        	//jQuery의 태크 선택자 -"태그명"(문서 내 모든 언급된 태그 선택)
+        	//dom객체.css('속성','속성값');
+        	$("h1").css('color','red');
+        	$("h1").css('background','black');
+        	$("h1").css('width','50%').css('height','40px');
+        	
+        	$('#h1').css('color','yellow');
+        	$('#h2').css('color','width');
+        	
+        	
+        }//콜백 함수 끝
+        )//redy 끝
+      
+      
+      </script>
+   </head>
+   <body>
+   	<h1>header</h1>
+   	<h1>header</h1>
+   	<h1>header</h1>
+   </body>
+</html>

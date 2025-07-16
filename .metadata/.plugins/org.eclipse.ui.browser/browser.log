@@ -1,0 +1,32 @@
+
+7월 01, 2025 09:03:27.50 NEW SESSION
+7월 01, 2025 09:03:27.50 [4004:7120:0701/090327.499:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:03:27.58 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+7월 01, 2025 09:03:27.58 I0000 00:00:1751328207.581380   14080 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+7월 01, 2025 09:03:27.70 Created TensorFlow Lite XNNPACK delegate for CPU.
+7월 01, 2025 09:13:47.50 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+7월 01, 2025 09:13:47.50 I0000 00:00:1751328827.504325   12292 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+7월 01, 2025 09:13:47.55 Created TensorFlow Lite XNNPACK delegate for CPU.
+7월 01, 2025 09:13:47.57 [13080:11992:0701/091347.579:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:14:14.66 [13080:11992:0701/091414.664:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:15:09.80 [13080:11992:0701/091509.804:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:15:53.11 [13080:10104:0701/091553.113:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+7월 01, 2025 09:17:01.55 [13080:11992:0701/091701.556:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:21:00.76 [13080:11992:0701/092100.764:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 09:26:55.74 [13080:11992:0701/092655.739:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 01, 2025 12:43:59.61 [13080:11992:0701/124359.613:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+7월 01, 2025 13:18:29.08 [13080:10104:0701/131829.088:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+7월 01, 2025 13:38:59.79 [13080:10104:0701/133859.798:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+7월 01, 2025 17:24:29.51 [13080:10104:0701/172429.512:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+7월 01, 2025 17:30:51.48 [13080:10104:0701/173051.480:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+
+7월 02, 2025 22:55:55.13 NEW SESSION
+7월 02, 2025 22:55:55.14 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+7월 02, 2025 22:55:55.14 I0000 00:00:1751464555.132515   17188 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+7월 02, 2025 22:55:55.18 [8920:17448:0702/225555.180:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 02, 2025 22:55:55.27 Created TensorFlow Lite XNNPACK delegate for CPU.
+7월 02, 2025 22:56:20.65 [8920:17448:0702/225620.658:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 02, 2025 22:57:01.14 [8920:17448:0702/225701.146:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 02, 2025 22:58:49.57 [8920:17448:0702/225849.578:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 02, 2025 23:01:48.99 [8920:17448:0702/230148.993:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7월 02, 2025 23:07:29.59 [8920:17448:0702/230729.591:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

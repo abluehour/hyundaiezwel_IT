@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      <style>
+      .section-title {
+        padding: 15px;
+    	}
+      .section-content {
+        background-color: white;
+        display: none; /* 내용은 기본적으로 숨김 */
+        overflow: hidden;
+    	}
+    	
+      
+      </style>
+      
+      
+      <script src="jquery-3.7.1.min.js"></script>      
+      <script type="text/javascript"> 
+      $(document).ready(function(){
+    	  $(".section-title").click(function(){
+    	        $(this).next(".section-content").slideToggle("fast");
+    	    });
+      })
+      
+      
+      
+      
+      </script>
+   </head>
+   <body>
+   	<div style="background-color: lightgray; margin: 10px auto;  padding: 10px;">
+   		<div class="section-title">Section 1</div>
+   		<div class="section-content">
+   			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae
+      turpis hendrerit, ornare nunc a, mollis neque. Donec cursus arcu magna, et
+      lobortis libero sodales a. Mauris ac facilisis eros. Praesent sit amet
+      pulvinar felis. Curabitur hendrerit mauris ut ornare venenatis. Vestibulum
+      ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+      curae; Nulla facilisi. Ut vehicula, felis nec bibendum commodo, dui tellus
+      ultrices magna, non iaculis ipsum urna eget mi. Donec consequat dolor at
+      urna dignissim, id tincidunt ligula viverra. Etiam semper libero vel
+      congue sollicitudin</p>
+   		</div>
+   		<div class="section-title">Section 2</div>
+   		<div class="section-content">
+   			<p>두 번째 숨겨진 섹션의 내용입니다.<br>두 번째 줄입니다.</p>
+   		</div>
+   		<div class="section-title">Section 3</div>
+   		<div class="section-content">
+   			<p>세 번째 숨겨진 섹션의 내용입니다.<br>두 번째 줄입니다.</p>
+   		</div>
+   	</div>
+   		
+   </body>
+</html>
